@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="2dip"
+        tools:ignore="MissingConstraints">
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="0dip"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="0dip"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:orientation="vertical"
+                    android:layout_margin="0dip"
+                    tools:ignore="MissingConstraints">
+                    <ImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image"
+                        android:layout_width="fill_parent"
+                        android:scaleType="fitXY"
+                        android:layout_height="80dip"
+                        android:src="@drawable/logo"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3"
+                    android:orientation="vertical"
+                    android:layout_margin="0dip"
+                    tools:ignore="MissingConstraints">
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="1dip"
+                        tools:ignore="MissingConstraints">
+                        <TextView
+                            android:id="@+id/idddd"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dip"
+                            android:gravity="left"
+                            android:textSize="15dip"
+                            android:layout_weight="0.4"
+                            android:textColor="#000"
+                            android:text="DRSID #TAMCO1223456"/>
+
+                        <TextView
+                            android:id="@+id/status"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dip"
+                            android:gravity="left"
+                            android:layout_weight="0.6"
+                            android:textSize="12dip"
+                            android:textColor="@color/redcolor"
+                            android:text=" Not Processed"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="1dip"
+                        android:gravity="left|center"
+                        tools:ignore="MissingConstraints">
+
+                        <ImageView
+                            android:layout_width="20dip"
+                            android:layout_height="20dip"
+                            android:src="@drawable/clock"/>
+                        <TextView
+                            android:id="@+id/date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="5dip"
+                            android:layout_marginLeft="5dip"
+                            android:gravity="left|top"
+                            android:textSize="15dip"
+                            android:textColor="#b6b6b6"
+                            android:text="DATE: 18-09-2018"/>
+                        <TextView
+                            android:id="@+id/id"
+                            android:layout_width="0dip"
+                            android:layout_height="0dip"
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1dip"
+                android:background="@color/colorPrimaryDark"
+                />
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+</LinearLayout>

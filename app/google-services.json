@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "210415714894",
+    "firebase_url": "https://emdad-f96f3.firebaseio.com",
+    "project_id": "emdad-f96f3",
+    "storage_bucket": "emdad-f96f3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:210415714894:android:a2865794d2ed34da07791f",
+        "android_client_info": {
+          "package_name": "com.emdad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "210415714894-67lii41p9b92upo2que7ns4jgr5ofapp.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.emdad",
+            "certificate_hash": "dccf832730510ed7b073fc93f8c1b30042166d3c"
+          }
+        },
+        {
+          "client_id": "210415714894-dp0i3hi3a49cq7k9obrtqa69gc9rrebo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAIAYMlwmfyeRrAmjzF9dQVmWTPfsOLeg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "210415714894-dp0i3hi3a49cq7k9obrtqa69gc9rrebo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

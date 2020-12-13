@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Profile"
+    tools:showIn="@layout/activity_profile">
+  <ScrollView
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+
+      tools:ignore="MissingConstraints">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dip"
+        tools:ignore="MissingConstraints">
+      <LinearLayout
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:orientation="vertical"
+          android:layout_marginBottom="20dip"
+          android:gravity="center"
+          tools:ignore="MissingConstraints">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:tint="@color/colorPrimaryDark"
+            android:src="@drawable/uprofile"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorPrimaryDark"/>
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/rounded_button">
+
+
+          <ImageView
+              android:id="@+id/farrow"
+              android:layout_width="40dip"
+              android:layout_height="40dip"
+              android:layout_margin="7dip"
+              android:tint="@color/colorPrimaryDark"
+              android:src="@drawable/username"/>
+
+          <TextView
+              android:id="@+id/username"
+              android:layout_width="200dip"
+              android:layout_height="wrap_content"
+              android:layout_margin="4dip"
+              android:layout_toRightOf="@id/farrow"
+              android:gravity="left"
+              android:padding="5dip"
+              android:textStyle="normal"
+              android:text="Username"
+              android:textColor="#fff"
+              android:textSize="20dip" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/rounded_button">
+
+
+          <ImageView
+              android:id="@+id/farrow1"
+              android:layout_width="40dip"
+              android:layout_height="40dip"
+              android:layout_margin="7dip"
+              android:tint="@color/colorPrimaryDark"
+              android:src="@drawable/email123"/>
+
+          <TextView
+              android:id="@+id/email"
+              android:layout_width="200dip"
+              android:layout_height="wrap_content"
+              android:layout_margin="4dip"
+              android:layout_toRightOf="@id/farrow1"
+              android:gravity="left"
+              android:padding="5dip"
+              android:textStyle="normal"
+              android:text="ru100@gmail.com"
+              android:textColor="#fff"
+              android:textSize="20dip" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/rounded_button">
+
+
+          <ImageView
+              android:id="@+id/farrow12"
+              android:layout_width="40dip"
+              android:layout_height="40dip"
+              android:layout_margin="7dip"
+              android:tint="@color/colorPrimaryDark"
+              android:src="@drawable/courier_number"/>
+
+          <TextView
+              android:id="@+id/courname"
+              android:layout_width="200dip"
+              android:layout_height="wrap_content"
+              android:layout_margin="4dip"
+              android:layout_toRightOf="@id/farrow12"
+              android:gravity="left"
+              android:padding="5dip"
+              android:textStyle="normal"
+              android:text="Courier Number"
+              android:textColor="#fff"
+              android:textSize="20dip" />
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/rounded_button">
+
+
+          <ImageView
+              android:id="@+id/farrow123"
+              android:layout_width="40dip"
+              android:layout_height="40dip"
+              android:layout_margin="7dip"
+              android:tint="@color/colorPrimaryDark"
+              android:src="@drawable/vehicle_number"/>
+
+          <TextView
+              android:id="@+id/vnumber"
+              android:layout_width="200dip"
+              android:layout_height="wrap_content"
+              android:layout_margin="4dip"
+              android:layout_toRightOf="@id/farrow123"
+              android:gravity="left"
+              android:padding="5dip"
+              android:textStyle="normal"
+              android:text="Vehicle Number"
+              android:textColor="#fff"
+              android:textSize="20dip" />
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/rounded_button">
+
+
+          <ImageView
+              android:id="@+id/farrow124"
+              android:layout_width="40dip"
+              android:layout_height="40dip"
+              android:layout_margin="7dip"
+              android:tint="@color/colorPrimaryDark"
+              android:src="@drawable/mobile"/>
+
+          <TextView
+              android:id="@+id/nnumber"
+              android:layout_width="200dip"
+              android:layout_height="wrap_content"
+              android:layout_margin="4dip"
+              android:layout_toRightOf="@id/farrow124"
+              android:gravity="left"
+              android:padding="5dip"
+              android:textStyle="normal"
+              android:text="Mobile Number"
+              android:textColor="#fff"
+              android:textSize="20dip" />
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip"
+            android:background="@drawable/rounded_button">
+
+
+          <ImageView
+              android:id="@+id/farrow125"
+              android:layout_width="40dip"
+              android:layout_height="40dip"
+              android:layout_margin="7dip"
+              android:tint="@color/colorPrimaryDark"
+              android:src="@drawable/supplier"/>
+
+          <TextView
+              android:id="@+id/suplier"
+              android:layout_width="200dip"
+              android:layout_height="wrap_content"
+              android:layout_margin="4dip"
+              android:layout_toRightOf="@id/farrow125"
+              android:gravity="left"
+              android:padding="5dip"
+              android:textStyle="normal"
+              android:text="Supplier"
+              android:textColor="#fff"
+              android:textSize="20dip" />
+        </RelativeLayout>
+
+
+
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:padding="15dip"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dip"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dip"
+            android:background="@drawable/rounded_edittext"
+            android:text="UPDATE PROFILE"/>
+
+      </LinearLayout>
+
+
+    </LinearLayout>
+  </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

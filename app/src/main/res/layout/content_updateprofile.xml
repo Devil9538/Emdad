@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Updateprofile"
+    tools:showIn="@layout/activity_updateprofile">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dip"
+            tools:ignore="MissingConstraints">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dip"
+                android:gravity="center"
+                tools:ignore="MissingConstraints">
+                <FrameLayout
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp">
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image"
+                        android:layout_width="170dp"
+                        android:layout_marginTop="100dp"
+                        android:layout_height="170dp"
+                        android:src="@drawable/uuimg"
+                        app:civ_border_width="4dp"
+                        app:civ_border_color="@color/colorPrimaryDark"
+                        android:layout_gravity="bottom|center_horizontal"/>
+
+                    <ImageView
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/profile_image1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:scaleType="fitXY"
+                        android:visibility="gone"
+                        android:src="@drawable/cccam123"
+                        android:layout_marginRight="15dip"
+                        android:layout_gravity="bottom|right"
+                        />
+
+                </FrameLayout>
+
+
+
+
+                <EditText
+                    android:id="@+id/username"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dip"
+                    android:background="@drawable/rounded_edittext"
+                    android:inputType="text"
+                    android:drawablePadding="20dp"
+                    android:layout_margin="10dip"
+                    android:drawableLeft="@drawable/usernamebg"
+                    android:hint="User Name"/>
+
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dip"
+                    android:background="@drawable/rounded_edittext"
+                    android:inputType="text"
+                    android:drawablePadding="20dp"
+                    android:layout_margin="10dip"
+                    android:drawableLeft="@drawable/emailbg"
+                    android:hint="Email"/>
+                <EditText
+                    android:id="@+id/cnumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dip"
+                    android:background="@drawable/rounded_edittext"
+                    android:inputType="text"
+                    android:layout_margin="10dip"
+                    android:drawablePadding="20dp"
+                    android:drawableLeft="@drawable/courierbg"
+                    android:hint="Courier Number"/>
+
+                <EditText
+                    android:id="@+id/vnumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dip"
+                    android:background="@drawable/rounded_edittext"
+                    android:inputType="text"
+                    android:layout_margin="10dip"
+                    android:drawablePadding="20dp"
+                    android:drawableLeft="@drawable/vehiclebg"
+                    android:hint="Vehicle Number"/>
+
+                <EditText
+                    android:id="@+id/mnumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dip"
+                    android:background="@drawable/rounded_edittext"
+                    android:inputType="text"
+                    android:layout_margin="10dip"
+                    android:drawablePadding="20dp"
+                    android:drawableLeft="@drawable/mobilebg"
+                    android:hint="Mobile Number"/>
+
+
+                <EditText
+                    android:id="@+id/supplier"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dip"
+                    android:background="@drawable/rounded_edittext"
+                    android:inputType="text"
+                    android:layout_margin="10dip"
+                    android:drawablePadding="20dp"
+                    android:drawableLeft="@drawable/supplierbg"
+                    android:hint="Supplier"/>
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button"
+                    android:padding="15dip"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dip"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dip"
+                    android:background="@drawable/rounded_edittext"
+                    android:text="UPDATE PROFILE"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

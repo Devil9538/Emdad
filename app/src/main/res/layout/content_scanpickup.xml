@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Scanpickup"
+    tools:showIn="@layout/activity_scanpickup">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="true"
+        tools:ignore="MissingConstraints">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dip"
+                android:orientation="vertical"
+                android:gravity="center|top"
+                android:layout_margin="10dip">
+
+
+                <EditText
+                    android:id="@+id/edittext"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dip"
+                    android:layout_weight="0.8"
+                    android:background="@drawable/rounded_edittext"
+                    android:drawableRight="@drawable/searchbg"
+                    android:hint="ENTER AWB NUMBER"
+                    android:padding="2dip"
+
+                    />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="0dip"
+                   android:id="@+id/nowithcomma"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center|top"
+                android:layout_margin="10dip">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="2dip"
+                    tools:ignore="MissingConstraints">
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:id="@+id/l2"
+                        android:layout_margin="10dip"
+                        android:background="@drawable/layout_bg"
+                        android:orientation="vertical"
+                        tools:ignore="MissingConstraints">
+
+
+                        <ImageView
+                            android:layout_width="90dip"
+                            android:layout_height="70dip"
+                            android:layout_marginTop="10dip"
+                            android:layout_marginBottom="5dip"
+                            android:tint="@color/colorPrimary"
+                            android:src="@drawable/scanpickup" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dip"
+                            android:gravity="center"
+                            android:padding="5dip"
+                            android:text="Add Manually"
+                            android:textColor="#000"
+                            android:textSize="15dip" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:id="@+id/l1"
+                        android:layout_margin="10dip"
+                        android:background="@drawable/layout_bg"
+                        android:orientation="vertical"
+                        tools:ignore="MissingConstraints">
+
+
+                        <ImageView
+                            android:layout_width="90dip"
+                            android:layout_height="70dip"
+                            android:layout_marginTop="10dip"
+                            android:layout_marginBottom="5dip"
+                            android:tint="@color/colorPrimary"
+                            android:src="@drawable/scandrs" />
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="4dip"
+                            android:gravity="center"
+                            android:padding="5dip"
+                            android:text="Scan Pickup"
+                            android:textColor="#000"
+                            android:textSize="15dip" />
+
+                    </LinearLayout>
+
+
+
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/button"
+                android:padding="15dip"
+                android:layout_margin="10dip"
+                android:textColor="#fff"
+                android:textSize="20dip"
+                android:background="@drawable/rounded_button"
+                android:text="MAKE PICKUP SHEET"/>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="0dip"
+                tools:ignore="MissingConstraints">
+
+
+                <TextView
+                    android:id="@+id/slip_no"
+                    android:layout_width="0dip"
+                    android:layout_height="0dip"
+                    />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:padding="0dp"
+                        android:layout_marginTop="15dp"/>
+
+
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
